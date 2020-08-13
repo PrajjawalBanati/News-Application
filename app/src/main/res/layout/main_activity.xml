@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/linearlayout1">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/horizontalScrollView">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNN"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-light"
+                    android:background="#FFF"
+                    android:id="@+id/cnnnews"/>
+
+                <Button
+                    android:id="@+id/techcrunchnews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:text="TechCrunch" />
+
+                <Button
+                    android:id="@+id/timenews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:text="Time" />
+
+                <Button
+                    android:id="@+id/thetimesofindianews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:text="The Times Of India" />
+
+                <Button
+                    android:id="@+id/thehindunews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:text="The Hindu" />
+
+                <Button
+                    android:id="@+id/foxnews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:text="Fox News" />
+
+                <Button
+                    android:id="@+id/buzzfeednews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Buzzfeed"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/foxsports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFF"
+                    android:text="Fox Sports" />
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview"
+            android:layout_below="@+id/linearlayout1"
+            tools:ignore="UnknownId">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
